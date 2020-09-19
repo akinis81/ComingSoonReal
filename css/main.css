@@ -78,20 +78,27 @@ body * {
     }
         .left-column{
             width:50%;
-            background-color: chartreuse;
+            /* background-color: chartreuse; */
             float: left;
         }
         .right-column{
             width:40%;
-            background-color: coral;
+            /* background-color: coral; */
             float: right;
         }
-.social{
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px solid white;
-    float: left;
-}
+            .column-title{
+                margin-bottom: 30px;
+            }
+            .column-description{
+                margin-bottom: 30px;
+            }
+
+        .social{
+            display: inline-block;
+            width: 100%;
+            border-bottom: 1px solid white;
+            float: left;
+        }
 
 .footer-texts{
     display: inline-block;
@@ -123,18 +130,18 @@ body * {
         
         .left-column{
             width:100%;
-            background-color: green;
+            /* background-color: green; */
             margin-bottom: 60px;
             
         }
         .right-column{
             width:100%;
-            background-color: red;
+            /* background-color: red; */
           
         }
 }  
 
-@media(max-width: 600px) {
+@media(max-width: 616px) {
     .hero-row{
         width: 400px;  
         margin-left: calc( ( 100% - 400px ) / 2);
