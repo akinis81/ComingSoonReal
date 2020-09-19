@@ -102,6 +102,16 @@
 
 }
 
+    .footer-texts > .logo {}
+
+    .copyright{}
+
+        .copyright > .texts {}
+            
+    .footer-texts > p{}
+    
+    .footer-texts a {}
+
 @media(max-width: 1000px) {
     .row{
         width:800px;
