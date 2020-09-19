@@ -1,17 +1,8 @@
-body,
-body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
 
 .bg-blue{
     display: inline-block;
     width:100%;
-    /* background-color: blue; */
+    background-color: blue;
 }
 .container{
     display: inline-block;
@@ -98,15 +89,16 @@ body * {
             width: 100%;
             border-bottom: 1px solid white;
             float: left;
+            text-align: center;
         }
 
 .footer-texts{
     display: inline-block;
-    /* mano nuomone Width nereikia keisti i 600px, palikti 100%, nes vis tiek riekes centruoti */
     width: 600px;
-    /* margin-left: calc( ( 100% - 600px ) / 2); */
-    /* margin-right: calc( ( 100% - 600px ) / 2); */
+    margin-left: calc( ( 100% - 600px ) / 2);
+    margin-right: calc( ( 100% - 600px ) / 2);
     float: left;
+    text-align: center;
 
 }
 
