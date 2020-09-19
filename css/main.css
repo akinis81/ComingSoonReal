@@ -5,19 +5,20 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 .bg-blue{
     display: inline-block;
     width:100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .container{
     display: inline-block;
     width:100%;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
+    /* text-align: center; */
     /* background-color: cyan; */
     }
     .hero-row{
@@ -25,9 +26,18 @@ body * {
       width: 600px;  
       margin-left: calc( ( 100% - 600px ) / 2);
       margin-right: calc( ( 100% - 600px ) / 2);
-      background-color: crimson;
+      /* background-color: crimson; */
     }
-
+    
+    .row{
+        display: inline-block;
+        width:1000px;
+        margin-left: calc( ( 100% - 1000px ) / 2);
+        margin-right: calc( ( 100% - 1000px ) / 2);
+        /* background-color: crimson; */
+        
+    }
+   
     .hero-bg{
         background-image: url(../img/hero-bg.jpg);
         background-size: cover;
@@ -35,21 +45,12 @@ body * {
         background-attachment: fixed;
         
     }
-    .row{
-        display: inline-block;
-        width:1000px;
-        margin-left: calc( ( 100% - 1000px ) / 2);
-        margin-right: calc( ( 100% - 1000px ) / 2);
-        
-    }
         .left-column{
-            display: inline-block;
             width:50%;
             background-color: chartreuse;
             float: left;
         }
         .right-column{
-            display: inline-block;
             width:40%;
             background-color: coral;
             float: right;
@@ -58,14 +59,96 @@ body * {
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid white;
+    float: left;
 }
 
 .footer-texts{
     display: inline-block;
     /* mano nuomone Width nereikia keisti i 600px, palikti 100%, nes vis tiek riekes centruoti */
     width: 600px;
-    margin-left: calc( ( 100% - 600px ) / 2);
-    margin-right: calc( ( 100% - 600px ) / 2);
+    /* margin-left: calc( ( 100% - 600px ) / 2); */
+    /* margin-right: calc( ( 100% - 600px ) / 2); */
+    float: left;
 
 }
+
+@media(max-width: 1000px) {
+    .row{
+        width:800px;
+        margin-left: calc( ( 100% - 800px ) / 2);
+        /* margin-right: calc( ( 100% - 800px ) / 2); */
+        /* background-color: grey; */
+        
+    }
+}
+
+    @media(max-width: 900px) {
+        .row{
+            width:600px;
+            margin-left: calc( ( 100% - 600px ) / 2);
+            /* margin-right: calc( ( 100% - 600px ) / 2); */
+            /* background-color: blue; */
+        }
+        
+        .left-column{
+            width:100%;
+            background-color: green;
+            margin-bottom: 60px;
+            
+        }
+        .right-column{
+            width:100%;
+            background-color: red;
+          
+        }
+}  
+
+@media(max-width: 600px) {
+    .hero-row{
+        width: 400px;  
+        margin-left: calc( ( 100% - 400px ) / 2);
+        margin-right: calc( ( 100% - 400px ) / 2);
+        /* background-color: rebeccapurple; */
+      }
+    .row{
+        width:400px;
+        margin-left: calc( ( 100% - 400px ) / 2);
+        margin-right: calc( ( 100% - 400px ) / 2);
+        /* background-color: yellow; */
+    }
+    .footer-texts {
+        display: inline-block;
+        width: 400px;
+        margin-left: calc( ( 100% - 400px ) / 2);
+        margin-right: calc( ( 100% - 400px ) / 2);
+}
+}
+
+
+@media(max-width: 500px) {
+    .container {
+        /* width: 400px; */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero-row{
+        width:80%;
+        margin-left: 0;
+        
+        /* background-color: rebeccapurple; */
+      }
+    .row{
+        width:100%;
+        margin-left: 0;
+        /* background-color: yellow; */
+    }
+    .footer-texts {
+        width:100%;
+        margin-left: 0;
+        /* background-color: chartreuse; */
+
+}
+   
+
+}  
 
