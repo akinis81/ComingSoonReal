@@ -1,17 +1,8 @@
-body,
-body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
 
 .bg-blue{
     display: inline-block;
     width:100%;
-    /* background-color: blue; */
+    background-color: blue;
 }
 .container{
     display: inline-block;
@@ -93,22 +84,105 @@ body * {
                 margin-bottom: 30px;
             }
 
+           footer.container{
+               padding-top: 0;
+           } 
+
         .social{
             display: inline-block;
             width: 100%;
             border-bottom: 1px solid white;
             float: left;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
         }
+
+        .social > a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            line-height: 20px;
+            width: 40px;
+            /* background-color: red; */
+            margin: 10px;
+
+           
+        }
+        .social > a:hover {
+            background-color: white;
+            border-radius: 50%;
+            color: blue;
+         
+       
+        }
+
 
 .footer-texts{
     display: inline-block;
-    /* mano nuomone Width nereikia keisti i 600px, palikti 100%, nes vis tiek riekes centruoti */
-    width: 600px;
-    /* margin-left: calc( ( 100% - 600px ) / 2); */
-    /* margin-right: calc( ( 100% - 600px ) / 2); */
+    width:  600px;
+    margin-left: calc( ( 100% - 600px ) / 2);
+    margin-right: calc( ( 100% - 600px ) / 2);
     float: left;
-
+    text-align: center;
+    color: white;
+    font-size: 18px;
 }
+
+    .footer-texts > .logo {
+        margin-bottom: 30px;
+        height: 40px;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+
+    }
+
+    .copyright{
+        display: inline-block;
+        width: 100%;
+    }
+
+        .copyright > .texts {
+            display: inline-block;
+            float: left;
+
+        }
+
+            .copyright > .texts.borders {
+                margin-right: 20px;
+                margin-left: 20px;
+                position: relative;
+            }
+
+            .copyright > .texts.borders::before {
+               display: inline-block;
+               content:'';
+               height: 10px;
+               width: 1px;
+               background-color: white;
+               position: relative;
+               left: -9px;
+               top: 0px;
+            }
+            .copyright > .texts.borders::after {
+               display: inline-block;
+               content:'';
+               height: 10px;
+               width: 1px;
+               background-color: white;
+               position: relative;
+               right: -9px;
+               top: 0px;
+            }
+            
+    .footer-texts > p{}
+
+    .footer-texts a {
+        color: white;
+    }
 
 @media(max-width: 1000px) {
     .row{
@@ -141,7 +215,7 @@ body * {
         }
 }  
 
-@media(max-width: 616px) {
+@media(max-width: 700px) {
     .hero-row{
         width: 400px;  
         margin-left: calc( ( 100% - 400px ) / 2);
@@ -160,6 +234,18 @@ body * {
         margin-left: calc( ( 100% - 400px ) / 2);
         margin-right: calc( ( 100% - 400px ) / 2);
 }
+.copyright > .texts {
+    width: 100%;
+
+}
+.copyright > .texts.borders {
+    margin: 0;
+}
+.copyright > .texts.borders::before,
+ .copyright > .texts.borders::after {
+    display: none;
+
+
 }
 
 
