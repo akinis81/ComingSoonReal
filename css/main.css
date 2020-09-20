@@ -37,11 +37,11 @@
         .sub-title{
             color: red;
             line-height: 30px;
-            margin-bottom: 60px;
+            margin-bottom: 45px;
 
         }
         .clock{
-            margin-bottom: 60px;
+            margin-bottom: 45px;
         }
 
         .hero-row > .form{
@@ -178,7 +178,7 @@
                top: 0px;
             }
             
-    .footer-texts > p{}
+    /* .footer-texts > p{} */
 
     .footer-texts a {
         color: white;
