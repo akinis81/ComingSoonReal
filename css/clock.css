@@ -29,13 +29,13 @@
         .clock > .time{
             width: 50%;
             }
-        
+}
 
 @media(max-width: 500px){
     .clock > .time{
         width: 100%;
     }
 
-
+}
 
 
